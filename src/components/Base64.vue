@@ -2,7 +2,7 @@
 <div class="base64-upload">
   <img :src="src"
     :style="imageStyle"/>
-  <input type="file"
+  <input class="el-input__inner" type="file"
     accept="image/*"
     @change="onChange" />
 </div>
@@ -48,13 +48,11 @@ export default {
 img {
   width: 40px;
   height: 40px;
+  float: left;
+  clear: left;
 }
 input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  float: left;
+  clear: left;
 }
 </style>
